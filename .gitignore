@@ -1,0 +1,186 @@
+# URL Shortener Project - .gitignore
+
+# ====================
+# ENVIRONMENT VARIABLES (CRITICAL!)
+# ====================
+.env
+.env.local
+.env.development.local
+.env.production.local
+backend/.env
+frontend/.env
+
+# ====================
+# NODE.JS DEPENDENCIES
+# ====================
+# Backend dependencies
+backend/node_modules/
+# Frontend dependencies  
+frontend/node_modules/
+# Root level dependencies (if any)
+node_modules/
+
+# Package manager files
+backend/package-lock.json
+frontend/package-lock.json
+backend/yarn.lock
+frontend/yarn.lock
+
+# ====================
+# BUILD & DIST FILES
+# ====================
+# React build files
+frontend/build/
+frontend/dist/
+
+# Backend compiled files (if using TypeScript)
+backend/dist/
+backend/build/
+
+# ====================
+# DATABASE FILES
+# ====================
+# MongoDB data (if running locally)
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# MongoDB logs
+mongodb.log
+mongo.log
+
+# ====================
+# LOGS & DEBUG
+# ====================
+# Application logs
+*.log
+logs/
+backend/logs/
+frontend/logs/
+
+# NPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Debug files
+*.pid
+*.seed
+*.pid.lock
+
+# ====================
+# DEVELOPMENT FILES
+# ====================
+# VS Code settings
+.vscode/
+# But keep workspace settings if needed
+!.vscode/settings.json
+
+# IntelliJ/WebStorm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ====================
+# TESTING & COVERAGE
+# ====================
+coverage/
+.nyc_output/
+.coverage/
+
+# Jest cache
+.jest-cache/
+
+# ====================
+# CACHE & TEMPORARY FILES
+# ====================
+# NPM cache
+.npm/
+
+# ESLint cache
+.eslintcache
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Temporary folders
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ====================
+# OS GENERATED FILES
+# ====================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.nfs*
+
+# ====================
+# PROJECT SPECIFIC
+# ====================
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Local configuration files
+config/local.js
+config/development.js
+config/production.js
+
+# SSL certificates (if storing locally)
+*.pem
+*.key
+*.crt
+*.cert
+
+# Documentation builds
+docs/build/
+
+# ====================
+# DEPLOYMENT FILES
+# ====================
+# Docker
+.dockerignore
+
+# Heroku
+.env.production
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# ====================
+# WHAT TO KEEP COMMITTED
+# ====================
+# Keep these files in version control:
+!backend/server.js
+!backend/models/
+!backend/routes/
+!backend/package.json
+!frontend/src/
+!frontend/public/
+!frontend/package.json
+!README.md
+!.env.example
+!.gitignore
